@@ -24,10 +24,12 @@ CustomSearchBar = () => {
   return (
     <Searchbar
       placeholder="Search"
+      placeholderTextColor="#ffffff"
+      iconColor="#ffffff"
       onChangeText={onChangeSearch}
       value={searchQuery}
       style={styles.container}
-      inputStyle={{paddingBottom:10}}
+      inputStyle={{paddingBottom:10,color:'#ffffff'}}
     />
   );
 };
