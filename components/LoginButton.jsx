@@ -12,10 +12,11 @@ const typography = {
 };
 
 const LoginButton = ({ handleAuth }) => {
+
   return (
     <Button
       mode="contained"
-      onPress={handleAuth}
+      onPress={() => console.log("pressed")}
       buttonColor="#4B312C"
       style={{
         borderRadius: 100,
