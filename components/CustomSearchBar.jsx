@@ -1,4 +1,4 @@
-import * as React from 'react';
+import {useState} from 'react';
 import { Searchbar } from 'react-native-paper';
 const styles = {
   container: {
@@ -17,7 +17,7 @@ const styles = {
   },
 };
 CustomSearchBar = () => {
-  const [searchQuery, setSearchQuery] = React.useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const onChangeSearch = query => setSearchQuery(query);
 
