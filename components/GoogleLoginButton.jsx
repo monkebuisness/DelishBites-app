@@ -1,35 +1,37 @@
 import React from 'react';
-import { Button, Text } from 'react-native-paper';
+import { Button, Text, Image } from 'react-native-paper';
 
 const typography = {
   titleLarge: {
     fontFamily: 'Roboto',
     fontSize: 22,
-    fontWeight: '400',
+    fontWeight: '500',
     letterSpacing: 0,
-    lineHeight: 28
+    lineHeight: 28,
   },
 };
 
-const LoginButton = ({ handleAuth }) => {
+const GoogleLoginButton = ({ handleAuth }) => {
 
   return (
     <Button
       mode="contained"
       onPress={() => handleAuth()}
-      buttonColor="#4B312C"
       style={{
         borderRadius: 100,
         height:49,
         width:301,
-        top:'5%'
+        top:'7%'
       }}
-      icon="login"
+      buttonColor='#ffffff'
+      textColor='#757575'
+      
+      icon={require('../assets/google.png')}
       labelStyle={typography.titleLarge}
     >
-      Login
+      Sign in with Google
     </Button>
   );
 };
 
-export default LoginButton;
+export default GoogleLoginButton;

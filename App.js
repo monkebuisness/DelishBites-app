@@ -4,8 +4,10 @@ import {
 	configureFonts,
 	MD3LightTheme,
 	PaperProvider,
-	Provider,
 } from "react-native-paper";
+import LoginButton from "./components/LoginButton";
+import LoginForum from "./components/LoginForum";
+import CustomSearchBar from "./components/CustomSearchBar";
 
 import LoginButton from "./components/LoginButton";
 import LoginForum from "./components/LoginForum";
