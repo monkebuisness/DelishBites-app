@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { configureFonts, MD3LightTheme, Provider } from "react-native-paper";
 import { Provider as PaperProvider } from "react-native-paper";
 
@@ -24,9 +24,9 @@ export default function App() {
 				button2onPress={() => console.log("Button 2 pressed")}
 			/>
 			<LoginPage />
-			<View style={styles.container}>
+			<SafeAreaView style={styles.container}>
 				<StatusBar style='auto' />
-			</View>
+			</SafeAreaView>
 		</Provider>
 	);
 }
