@@ -13,6 +13,7 @@ export default function App() {
 	return (
 		<Provider>
 			<Alert
+				dismissable={true}
 				title='Title'
 				text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
