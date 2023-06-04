@@ -63,16 +63,16 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	textContainer: {
-		flex: 30,
+		flex: 20,
 		alignItems: "center",
+		justifyContent: "center",
 		flexDirection: "row",
 	},
 	leftSpaceText: {
-		flex: 4,
+		flex: 7,
 	},
 	Text: {
 		flex: 83,
-		alignItems: "center",
 	},
 	rightSpaceText: {
 		flex: 13,
@@ -81,14 +81,16 @@ const styles = StyleSheet.create({
 		width: "100%",
 		width: "100%",
 		alignItems: "center",
-		flex: 10,
+		justifyContent: "center",
+		flex: 20,
 	},
 	inputChipsContainer: {
 		flex: 25,
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-around",
-		rowGap: 10,
+		rowGap: 30,
+		gap: 10,
 		width: "100%",
 		height: "100%",
 	},

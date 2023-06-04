@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Searchbar } from "react-native-paper";
+import LinearGradient from "react-native-linear-gradient";
+
 const styles = {
 	container: {
 		// display: "flex",
@@ -15,6 +17,7 @@ const styles = {
 		width: "95%",
 		backgroundColor:
 			"linear-gradient(0deg, rgba(75, 49, 44, 0.45), rgba(75, 49, 44, 0.45)), #FFFBFE",
+
 		borderRadius: 28,
 	},
 };
@@ -31,7 +34,7 @@ CustomSearchBar = () => {
 			onChangeText={onChangeSearch}
 			value={searchQuery}
 			style={styles.container}
-			inputStyle={{ paddingBottom: 10, color: "#ffffff" }}
+			inputStyle={{ color: "#ffffff" }}
 		/>
 	);
 };
