@@ -20,9 +20,9 @@ const LoginPage = () => {
 				<View style={styles.Text}>
 					<Text style={{ fontSize: 32, fontWeight: 400, color: "#4B312C" }}>
 						<Text style={{}}>Before You Get Started, Select Your </Text>
-						<Text style={{ fontWeight: "bold" }}>Alergies </Text>
+						<Text style={{ fontWeight: "700" }}>Alergies </Text>
 						<Text style={{}}>or </Text>
-						<Text style={{ fontWeight: "bold" }}>Dietary Restrictions</Text>
+						<Text style={{ fontWeight: "700" }}>Dietary Restrictions</Text>
 					</Text>
 				</View>
 				<View style={styles.rightSpaceText}></View>
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
 	},
 	Text: {
 		flex: 83,
+		fontFamily: "Roboto",
 	},
 	rightSpaceText: {
 		flex: 13,
@@ -81,8 +82,8 @@ const styles = StyleSheet.create({
 		width: "100%",
 		width: "100%",
 		alignItems: "center",
-		justifyContent: "center",
-		flex: 20,
+		// justifyContent: "center",
+		flex: 15,
 	},
 	inputChipsContainer: {
 		flex: 25,
