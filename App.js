@@ -8,11 +8,11 @@ import LoginButton from "./components/LoginButton";
 import LoginForum from "./components/LoginForum";
 import CustomSearchBar from "./components/CustomSearchBar";
 import LoginPage from "./pages/LoginPage";
-
+import DietaryRestrictionsPage from "./pages/DietaryRestrictionsPage";
 export default function App() {
 	return (
 		<Provider>
-			<Alert
+			{/* <Alert
 				dismissable={true}
 				title='Title'
 				text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -23,8 +23,9 @@ export default function App() {
 				button2label='Next'
 				button1onPress={() => console.log("Button 1 pressed")}
 				button2onPress={() => console.log("Button 2 pressed")}
-			/>
-			<LoginPage />
+			/> */}
+			{/* <LoginPage /> */}
+			{<DietaryRestrictionsPage />}
 			<SafeAreaView style={styles.container}>
 				<StatusBar style='auto' />
 			</SafeAreaView>
