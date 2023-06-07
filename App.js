@@ -24,11 +24,11 @@ export default function App() {
 				button1onPress={() => console.log("Button 1 pressed")}
 				button2onPress={() => console.log("Button 2 pressed")}
 			/> */}
-			{/* <LoginPage /> */}
-			{<DietaryRestrictionsPage />}
+			<LoginPage />
+			{/* {<DietaryRestrictionsPage />}
 			<SafeAreaView style={styles.container}>
 				<StatusBar style='auto' />
-			</SafeAreaView>
+			</SafeAreaView> */}
 		</Provider>
 	);
 }

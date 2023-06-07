@@ -43,18 +43,19 @@ const LoginForum = () => {
       value={email}
       onChangeText={email => setEmail(email)}
       style={styles.container}
-      contentStyle={{paddingBottom:25, paddingTop:25}}
+      contentStyle={{paddingVertical: 25}}
       mode="outlined"
       activeOutlineColor='#4B312C'
     />
     </View>
     <TextInput
+      secureTextEntry={true}
       label="Password"
       value={password}
       onChangeText={password => setPassword(password)}
       right={<TextInput.Icon style={{paddingTop:12.5}} icon="eye" />}
       style={styles.container}
-      contentStyle={{paddingBottom:25, paddingTop:25}}
+      contentStyle={{paddingVertical:25}}
       mode="outlined"
       activeOutlineColor='#4B312C'
     />
@@ -70,7 +71,7 @@ const LoginForum = () => {
         fontSize: 16
       }}>Dont have an account? </Text>
       <TouchableOpacity onPress={() => {/* route over to sign up page here*/}}>
-        <Text style={{color: '#AD40AF', fontWeight: '700', fontSize:16}}>Sign up!</Text>
+        <Text style={{color: '#866051', fontWeight: '700', fontSize:16}}>Sign up!</Text>
       </TouchableOpacity>
     </View>
     </>
