@@ -1,7 +1,10 @@
 # DelishBites
 
-An baking recipes app catered to your pantry needs.
+An baking recipes app catered to your pantry needs. Currently being developed using the MERN stack (MongoDB, Express, React Native, Nodejs) and Google Material 3 design.
 
+# Figma prototype
+
+Link: https://www.figma.com/file/a4LtuYfFSmw3hJirY5iHzo/Group-Project?type=design&t=bHufaS72ZSmMWQu2-1
 
 # Development Environment setup
 
