@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Avatar, TextInput } from "react-native-paper";
 import {View} from 'react-native';
 import SignUpButton from './SignUpButton';
-import { vw } from 'react-native-expo-viewport-units';
 
 const style = {
     textfield: {
