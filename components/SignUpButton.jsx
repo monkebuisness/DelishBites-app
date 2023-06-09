@@ -16,7 +16,7 @@ const SignUpButton = ({ handleAuth }) => {
   return (
     <Button
       mode="contained"
-      onPress={() => handleAuth()}
+      onPress={() => console.log("test")}
       buttonColor="#4B312C"
       style={{
         borderRadius: 100,
