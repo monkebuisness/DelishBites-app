@@ -11,7 +11,7 @@ const typography = {
   },
 };
 
-const SignUpButton = ({ handleAuth }) => {
+const EditProfileButton = ({ handleAuth }) => {
 
   return (
     <Button
@@ -26,9 +26,9 @@ const SignUpButton = ({ handleAuth }) => {
       }}
       labelStyle={typography.titleLarge}
     >
-      Sign Up
+      Save profile
     </Button>
   );
 };
 
-export default SignUpButton;
+export default EditProfileButton;
