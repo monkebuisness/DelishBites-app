@@ -26,7 +26,7 @@ export default function App() {
 				button2onPress={() => console.log("Button 2 pressed")}
 			/> */}
 
-			{<LoginPage />}
+			{<PantryPage />}
 			<SafeAreaView style={styles.container}>
 				<StatusBar style='auto' />
 			</SafeAreaView>
