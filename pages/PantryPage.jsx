@@ -4,6 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import CustomSearchBar from '../components/CustomSearchBar';
 import { SafeAreaView } from 'react-native';
 import {FAB} from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
+
 const styles = StyleSheet.create({
 	fullScreen: {
 		flexDirection: "column",
@@ -67,6 +69,7 @@ const styles = StyleSheet.create({
 
 
 const PantryPage = () => {
+    const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.fullScreen}>
         <View style={styles.text}>
@@ -80,7 +83,7 @@ const PantryPage = () => {
       <FAB
     icon="plus"
     style={styles.fab}
-    onPress={() => console.log('Pressed')}
+    onPress={() => {navigation.navigate("AddItemsPage")}}
     color="#4B312C"
     variant='tertiary'
   />

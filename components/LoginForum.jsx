@@ -3,6 +3,7 @@ import { TextInput,Button } from 'react-native-paper';
 import {Text,TouchableOpacity, View } from 'react-native';
 import LoginButton from './LoginButton';
 import GoogleLoginButton from './GoogleLoginButton';
+import { useNavigation } from '@react-navigation/native';
 
 
 const styles = {
@@ -21,11 +22,12 @@ const styles = {
       display: 'flex',
       flexDirection: 'row',
       left: '0%', // Adjust the percentage value as needed
-      top: '20%', // Adjust the percentage value as needed
+      top: '10%', // Adjust the percentage value as needed
     }
   };
 
 const LoginForum = () => {
+  const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password,setPassword] = useState("");
 
@@ -59,7 +61,7 @@ const LoginForum = () => {
       mode="outlined"
       activeOutlineColor='#4B312C'
     />
-    <TouchableOpacity style={{left:'0%'}} onPress={() => {/* route over to forget password page or popup? */}} >
+    <TouchableOpacity style={{left:'0%'}} onPress={() => {}} >
       <Text style={{color: '#AD40AF', fontWeight: '700', fontSize:16}}>Forget Password?</Text>
     </TouchableOpacity>
 
@@ -72,7 +74,7 @@ const LoginForum = () => {
         fontWeight:400,
         fontSize: 16
       }}>Dont have an account? </Text>
-      <TouchableOpacity onPress={() => {/* route over to sign up page here*/}}>
+      <TouchableOpacity onPress={() => {navigation.navigate('DietaryRestrictions')}}>
         <Text style={{color: '#AD40AF', fontWeight: '700', fontSize:16}}>Sign up!</Text>
       </TouchableOpacity>
     </View>

@@ -11,8 +11,10 @@ import {
 import CustomSearchBar from "../components/CustomSearchBar";
 import CustomButton from "../components/Button";
 import InputChip from "../components/InputChips";
+import { useNavigation } from '@react-navigation/native';
 
-const LoginPage = () => {
+const DietaryRestrictionsPage = () => {
+	const navigation = useNavigation();
 	return (
 		<SafeAreaView style={styles.fullScreen}>
 			<View style={styles.textContainer}>
@@ -48,7 +50,7 @@ const LoginPage = () => {
 			<View style={styles.buttonContainer}>
 				<CustomButton
 					label={"Next"}
-					handleClick={() => {}}
+					handleClick={() => {navigation.navigate("PantryPage")}}
 				/>
 			</View>
 		</SafeAreaView>
@@ -104,4 +106,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default LoginPage;
+export default DietaryRestrictionsPage;

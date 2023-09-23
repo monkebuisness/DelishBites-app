@@ -21,7 +21,7 @@ const GoogleLoginButton = ({ handleAuth }) => {
         borderRadius: 100,
         height:49,
         width:301,
-        top:'7%'
+        top:'4%'
       }}
       buttonColor='#ffffff'
       textColor='#757575'

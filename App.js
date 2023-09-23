@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { configureFonts, MD3LightTheme, Provider } from "react-native-paper";
 import { Provider as PaperProvider } from "react-native-paper";
-
+import 'react-native-gesture-handler';
 import Alert from "./components/Alert";
 import LoginButton from "./components/LoginButton";
 import LoginForum from "./components/LoginForum";
@@ -11,6 +11,11 @@ import LoginPage from "./pages/LoginPage";
 import DietaryRestrictionsPage from "./pages/DietaryRestrictionsPage";
 import PantryPage from "./pages/PantryPage";
 import AddItemsPage from "./pages/AddItemsPage";
+
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 	return (
@@ -27,11 +32,21 @@ export default function App() {
 				button1onPress={() => console.log("Button 1 pressed")}
 				button2onPress={() => console.log("Button 2 pressed")}
 			/> */}
+		<NavigationContainer>
+      <Stack.Navigator screenOptions={{
+				headerShown: false
+			}}>
+        <Stack.Screen
+          name="Login"
+          component={LoginPage}
+        />
+		<Stack.Screen name="DietaryRestrictions" component={DietaryRestrictionsPage}/>
+		<Stack.Screen name="PantryPage" component={PantryPage}/>
+		<Stack.Screen name="AddItemsPage" component={AddItemsPage}>
+		</Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
 
-			{<AddItemsPage />}
-			<SafeAreaView style={styles.container}>
-				<StatusBar style='auto' />
-			</SafeAreaView>
 		</Provider>
 	);
 }

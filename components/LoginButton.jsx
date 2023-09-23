@@ -22,7 +22,7 @@ const LoginButton = ({ handleAuth }) => {
         borderRadius: 100,
         height:49,
         width:301,
-        top:'5%'
+        top:'2%'
       }}
       icon="login"
       labelStyle={typography.titleLarge}
