@@ -51,6 +51,7 @@ const LoginForum = () => {
     <TextInput
       label="Password"
       value={password}
+      secureTextEntry
       onChangeText={password => setPassword(password)}
       right={<TextInput.Icon style={{paddingTop:12.5}} icon="eye" />}
       style={styles.container}
@@ -58,7 +59,9 @@ const LoginForum = () => {
       mode="outlined"
       activeOutlineColor='#4B312C'
     />
-    
+    <TouchableOpacity style={{left:'0%'}} onPress={() => {/* route over to forget password page or popup? */}} >
+      <Text style={{color: '#AD40AF', fontWeight: '700', fontSize:16}}>Forget Password?</Text>
+    </TouchableOpacity>
 
     <LoginButton handleAuth={handleAuth}/>
     <GoogleLoginButton handleAuth={handleAuth}/>
