@@ -20,7 +20,7 @@ const LoginPage = () => {
 				<View style={styles.Text}>
 					<Text style={{ fontSize: 32, fontWeight: 400, color: "#4B312C" }}>
 						<Text style={{}}>Before You Get Started, Select Your </Text>
-						<Text style={{ fontWeight: "700" }}>Alergies </Text>
+						<Text style={{ fontWeight: "700" }}>Allergies </Text>
 						<Text style={{}}>or </Text>
 						<Text style={{ fontWeight: "700" }}>Dietary Restrictions</Text>
 					</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	textContainer: {
-		flex: 20,
+		flex: 38,
 		alignItems: "center",
 		justifyContent: "center",
 		flexDirection: "row",
