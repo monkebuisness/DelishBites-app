@@ -13,15 +13,17 @@ const styles = StyleSheet.create({
 	},
 	textContainer: {
 		flex: 38,
-		alignItems: "center",
-		justifyContent: "center",
+		alignItems: "left",
+		justifyContent: "left",
 		flexDirection: "row",
 	},
 	leftSpaceText: {
 		flex: 7,
 	},
 	Text: {
+        position:"absolute",
 		flex: 83,
+        top:30,
 		fontFamily: "Roboto",
         alignItems: "left",
 	},
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		// justifyContent: "center",
 		flex: 15,
+        top:10
 	},
 	inputChipsContainer: {
 		flex: 25,
@@ -59,7 +62,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         color: "#4B312C"
 
-    }
+    },
 });
 
 
@@ -72,13 +75,14 @@ const PantryPage = () => {
         <View style={styles.searchContainer}>
 				<CustomSearchBar />
                 
-      <Text>No ingredients to display, press + to add ingredients</Text>
+      <Text style={{color: "#4B312C" , textAlign:"left", top:10}}>No ingredients to display, press + to add ingredients</Text>
 		</View>
       <FAB
     icon="plus"
     style={styles.fab}
     onPress={() => console.log('Pressed')}
     color="#4B312C"
+    variant='tertiary'
   />
     </SafeAreaView>
   );
