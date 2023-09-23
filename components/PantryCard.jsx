@@ -2,11 +2,11 @@ import * as React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 import { Avatar, Card, IconButton} from 'react-native-paper';
 
-const PantryCard = ( ) => {
+const PantryCard = (props) => {
 	return (
-            <Card.Title
-    title="Semi Sweet Chocolate Chips"
-    subtitle="500g"
+    <Card.Title
+    title={props.title}
+    subtitle={props.subtitle}
     left={(props) => <Image style={{
       width: 50,
       height: 50,
