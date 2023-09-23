@@ -75,12 +75,25 @@ const AddItemsPage = () => {
         </View>
         <View style={styles.searchContainer}>
 				<CustomSearchBar />
-		</View>
+        <View>
+        <Text style={{fontSize: 24, fontWeight: 400, color: "#4B312C", textAlign:"left" }}>Dairy</Text>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        </View>
 
         <View>
-        <Text>Dairy</Text>
-        <PantryCard/>
+        <Text style={{fontSize: 24, fontWeight: 400, color: "#4B312C", textAlign:"left" }}>Flour</Text>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        <PantryCard title="Milk" subtitle="2L"/>
+        
         </View>
+		</View>
+
+        
         
 
     </SafeAreaView>

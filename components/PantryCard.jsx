@@ -31,6 +31,7 @@ const PantryCard = (props) => {
 const styles = StyleSheet.create({
 	container: {
 		flexDirection: "row",
+    color:"#ffffff"
 	}
 });
 

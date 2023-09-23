@@ -10,6 +10,7 @@ import CustomSearchBar from "./components/CustomSearchBar";
 import LoginPage from "./pages/LoginPage";
 import DietaryRestrictionsPage from "./pages/DietaryRestrictionsPage";
 import PantryPage from "./pages/PantryPage";
+import AddItemsPage from "./pages/AddItemsPage";
 
 export default function App() {
 	return (
@@ -27,7 +28,7 @@ export default function App() {
 				button2onPress={() => console.log("Button 2 pressed")}
 			/> */}
 
-			{<PantryPage />}
+			{<AddItemsPage />}
 			<SafeAreaView style={styles.container}>
 				<StatusBar style='auto' />
 			</SafeAreaView>
