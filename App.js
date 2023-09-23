@@ -9,6 +9,7 @@ import LoginForum from "./components/LoginForum";
 import CustomSearchBar from "./components/CustomSearchBar";
 import LoginPage from "./pages/LoginPage";
 import DietaryRestrictionsPage from "./pages/DietaryRestrictionsPage";
+import PantryPage from "./pages/PantryPage";
 
 export default function App() {
 	return (

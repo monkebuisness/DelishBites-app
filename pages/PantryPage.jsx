@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Appbar } from 'react-native-paper';
 import { View, Text, StyleSheet } from 'react-native';
 import CustomSearchBar from '../components/CustomSearchBar';
-
+import { SafeAreaView } from 'react-native';
+import {FAB} from 'react-native-paper';
 const styles = StyleSheet.create({
 	fullScreen: {
 		flexDirection: "column",
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
 	Text: {
 		flex: 83,
 		fontFamily: "Roboto",
+        alignItems: "left",
 	},
 	rightSpaceText: {
 		flex: 13,
@@ -50,24 +52,35 @@ const styles = StyleSheet.create({
 		width: "100%",
 		height: "100%",
 	},
+    fab: {
+        position: 'absolute',
+        margin: 16,
+        right: 0,
+        bottom: 0,
+        color: "#4B312C"
+
+    }
 });
 
 
 const PantryPage = () => {
   return (
-    <View>
-      <Appbar.Header>
-        <Appbar.Content
-          title={
-            <View style={styles.text}>
-              <Text style={{ fontSize: 32, fontWeight: 400, color: "#4B312C" }}></Text>
-            </View>
-          }
-        />
-      </Appbar.Header>
-      <CustomSearchBar/>
+    <SafeAreaView style={styles.fullScreen}>
+        <View style={styles.text}>
+        <Text style={{ fontSize: 32, fontWeight: 400, color: "#4B312C" , textAlign:"left" }}>Pantry</Text>
+        </View>
+        <View style={styles.searchContainer}>
+				<CustomSearchBar />
+                
       <Text>No ingredients to display, press + to add ingredients</Text>
-    </View>
+		</View>
+      <FAB
+    icon="plus"
+    style={styles.fab}
+    onPress={() => console.log('Pressed')}
+    color="#4B312C"
+  />
+    </SafeAreaView>
   );
 };
 
